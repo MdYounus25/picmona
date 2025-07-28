@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background: hsla(222, 47%, 11%, 1);
+}
+
+
+
+.mona {
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+}
+
+.image-box {
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    padding: 3px;
+    background: #fff;
+}
+.image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #092c3e;
+    border-radius: 12px;
+}
+
+.mona .details {
+    width: 58%;
+    margin: 10px 0 20px 40px;
+}
+
+.mona .details .name {
+    font-size: 23px;
+    font-weight: 600;
+    color: #1c77ff;
+}
+
+.mona .details .job {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8d8d8d;
+}
+
+.mona .details p {
+    font-size: 15px;
+    margin-top: 6px;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 900px) {
+    .mona {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .mona .text {
+      margin-bottom: 30px;
+    }
+}
